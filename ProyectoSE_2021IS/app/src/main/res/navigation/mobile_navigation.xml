@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_exterior">
+
+    <fragment
+        android:id="@+id/nav_exterior"
+        android:name="com.example.proyectose_2021is.ui.exterior.exteriorFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_exterior" />
+
+    <fragment
+        android:id="@+id/nav_luces"
+        android:name="com.example.proyectose_2021is.ui.luces.lucesFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_luces" />
+
+    <fragment
+        android:id="@+id/nav_voz"
+        android:name="com.example.proyectose_2021is.ui.voz.vozFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_voz" />
+</navigation>
