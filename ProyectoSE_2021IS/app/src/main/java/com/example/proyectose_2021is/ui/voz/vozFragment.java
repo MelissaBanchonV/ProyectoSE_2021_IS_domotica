@@ -80,7 +80,7 @@ public class vozFragment extends Fragment {
 
             @Override
             public void onBeginningOfSpeech() {
-                Toast.makeText(getContext(), "Escuchando...",Toast.LENGTH_LONG).show();
+                Toast.makeText(getContext(), "Escuchando...",Toast.LENGTH_SHORT).show();
             }
 
             @Override

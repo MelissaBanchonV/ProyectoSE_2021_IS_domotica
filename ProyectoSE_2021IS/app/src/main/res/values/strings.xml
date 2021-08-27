@@ -1,8 +1,8 @@
 <resources>
-    <string name="app_name">ProyectoSE_2021IS</string>
+    <string name="app_name">JARVIS ec</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Smart Home Project</string>
+    <string name="nav_header_title">JARVIS ec</string>
     <string name="nav_header_subtitle">Banchón - Lazo | P110</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>

@@ -62,14 +62,14 @@ public class MainActivity extends AppCompatActivity {
                 @Override
                 public void onSuccess(IMqttToken asyncActionToken) {
                     // We are connected
-                    Toast.makeText(MainActivity.this, "Conexión exitosa",Toast.LENGTH_LONG).show();
+                    Toast.makeText(MainActivity.this, "Conexión exitosa",Toast.LENGTH_SHORT).show();
                     Log.d("MQTT_SERVICE", "onSuccess");
                 }
 
                 @Override
                 public void onFailure(IMqttToken asyncActionToken, Throwable exception) {
                     // Something went wrong e.g. connection timeout or firewall problems
-                    Toast.makeText(MainActivity.this, "Falló la conexión",Toast.LENGTH_LONG).show();
+                    Toast.makeText(MainActivity.this, "Falló la conexión",Toast.LENGTH_SHORT).show();
                     Log.e("MQTT_SERVICE", "onFailure");
                     Log.e("MQTT_SERVICE", exception.getMessage());
 

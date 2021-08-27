@@ -1,5 +1,7 @@
 package com.example.proyectose_2021is.ui.exterior;
 
+import static com.example.proyectose_2021is.ui.voz.vozFragment.RecordAudioRequestCode;
+
 import android.Manifest;
 import android.app.Activity;
 import android.content.Intent;
@@ -31,8 +33,6 @@ import org.eclipse.paho.client.mqttv3.MqttException;
 
 import java.util.ArrayList;
 import java.util.Locale;
-
-import static com.example.proyectose_2021is.ui.voz.vozFragment.RecordAudioRequestCode;
 
 public class exteriorFragment extends Fragment {
 
@@ -71,7 +71,7 @@ public class exteriorFragment extends Fragment {
         ImageView encendido = root.findViewById(R.id.lightON);
         encendido.setOnClickListener(new View.OnClickListener() {
              public void onClick(View v) {
-                 Toast.makeText(getContext(),"Encendido",Toast.LENGTH_LONG).show();
+                 Toast.makeText(getContext(),"Encendido",Toast.LENGTH_SHORT).show();
                  try{
                      MainActivity.client.publish("nuGWuCsEaAPeld7/exterior/luz","encender".getBytes(),2,false);
                  }catch (Exception e){
@@ -82,7 +82,7 @@ public class exteriorFragment extends Fragment {
         ImageView apagado = root.findViewById(R.id.lightOFF);
         apagado.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Toast.makeText(getContext(), "Apagado",Toast.LENGTH_LONG).show();
+                Toast.makeText(getContext(), "Apagado",Toast.LENGTH_SHORT).show();
                 try{
                     MainActivity.client.publish("nuGWuCsEaAPeld7/exterior/luz","apagar".getBytes(),2,false);
                 }catch (Exception e){
@@ -94,7 +94,7 @@ public class exteriorFragment extends Fragment {
         ImageView abierto = root.findViewById(R.id.openDoor);
         abierto.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Toast.makeText(getContext(),"Encendido",Toast.LENGTH_LONG).show();
+                Toast.makeText(getContext(),"Abierto",Toast.LENGTH_SHORT).show();
                 try{
                     MainActivity.client.publish("nuGWuCsEaAPeld7/exterior/motor","abrir".getBytes(),2,false);
                 }catch (Exception e){
@@ -105,7 +105,7 @@ public class exteriorFragment extends Fragment {
         ImageView cerrado = root.findViewById(R.id.closeDoor);
         cerrado.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Toast.makeText(getContext(), "Apagado",Toast.LENGTH_LONG).show();
+                Toast.makeText(getContext(), "Cerrado",Toast.LENGTH_SHORT).show();
                 try{
                     MainActivity.client.publish("nuGWuCsEaAPeld7/exterior/motor","cerrar".getBytes(),2,false);
                 }catch (Exception e){
