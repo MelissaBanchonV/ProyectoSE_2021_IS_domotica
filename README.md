@@ -1,8 +1,8 @@
 # Diseño e implementación de un sistema de seguridad domótico con Raspberry Pi y una aplicación móvil.
 ## Proyecto / Grupo 4
 ## Integrantes:
-## Banchón V. Melissa
-## Lazo R. Brandon 
+* Banchón V. Melissa
+* Lazo R. Brandon 
 
 Script para la activación de la cámara https://www.sigmdel.ca/michel/ha/rpi/streaming_en.html
 
